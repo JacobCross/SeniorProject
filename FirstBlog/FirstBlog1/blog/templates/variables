@@ -1,0 +1,14 @@
+title = "Testing"
+
+body = <body>
+            <form action="/submitform/" method="post">
+                {% csrf_token %}
+                <label for="f_name">First name: </label>
+                <input id="f_name" type="text" name="f_name"><br>
+                <label for="l_Name">Last name: </label>
+                <input id="l_name" type="text" name="l_name"><br>
+                <label for="school">School: </label>
+                <input id="school" type="text" name="school"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </body>
